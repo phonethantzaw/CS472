@@ -16,9 +16,9 @@ body {
 
 a {
     text-decoration: none;
-  }
+}
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
@@ -33,4 +33,22 @@ a:hover{
 
 .red {
     color: darkred;
+}
+
+p::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+.image-row {
+    display: flex;
+}
+
+.image-row p{
+    margin: 10px; 
+}
+
+dl > dt{
+    color: darkkhaki;
 }
