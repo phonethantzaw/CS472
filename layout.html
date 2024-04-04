@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <link rel="stylesheet" href="css/stylelayout.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="topnav">
+        <a href="#">Login</a>
+        <a href="#">Knowledge Base</a>
+        <a href="#">Submit Ticket</a>
+        <a href="#">Agent Portal</a>
+        <img class="navimg" src="img/miu.png" alt="miu" />
+        <a class="navtitle">Maharishi University IT Dept</a>
+      </nav>
+    </header>
+    <main>
+      <h1 class="title">Welcome to our Support Center</h1>
+
+      <section class="row">
+        
+        <div class="column">
+          <div class="login-section">
+            <form>
+              <h2>Login</h2>
+              <p>Login to know the status of the ticket</p>
+
+              <button id="btnaz">
+                <img class="azimg" src="img/azure-ad.png" alt="azure" />
+              </button>
+              <div>
+                <hr />
+              </div>
+
+              <label for="username">Username or Email</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter email"
+              />
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter password"
+              />
+
+              <div class="vertical">
+                <input type="checkbox" id="remember-me" />
+                <label for="remember-me">Remember me</label>
+                <a class="fgpwd" href="#">Forgot password?</a>
+              </div>
+
+              <button type="submit">Login</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="column">
+          <div class="ticket-section">
+            <p>
+              Login to track your existing support requests. If you have not
+              created a ticket yet then you would need to
+              <a href="#">register</a> or <a href="#">create a new ticket</a> to
+              begin.
+            </p>
+            <button type="submit">Submit ticket</button>
+          </div>
+        </div>
+
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Copyright 2024, All right reserved</p>
+    </footer>
+  </body>
+</html>

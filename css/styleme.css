@@ -1,16 +1,15 @@
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: lightblue;
     font-size: 60px;
 }
 
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
     color: lightblue;
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: grey;
 }
 
@@ -23,15 +22,14 @@ a:hover {
 }
 
 #word {
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
-.des {
+.warningMsg {
     color: yellow;
 }
 
-.red {
+.errorMsg {
     color: darkred;
 }
 
@@ -45,10 +43,10 @@ p::first-letter {
     display: flex;
 }
 
-.image-row p{
-    margin: 10px; 
+.image-row p {
+    margin: 10px;
 }
 
-dl > dt{
+dl>dt {
     color: darkkhaki;
 }
