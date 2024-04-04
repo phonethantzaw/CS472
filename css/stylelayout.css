@@ -172,8 +172,14 @@ button[type="submit"] {
 .footer {
     background-color: #E6E6E6;
     margin-top: auto;
-    text-align: right;
-    align-items: center;
-    padding: 5px;
 }
 
+.footer-row {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.footer p {
+    margin: 10px;
+}
