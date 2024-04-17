@@ -38,8 +38,8 @@ function Student(fname, lname, grades) {
 Student.prototype.insertGrade = function (newGrade) {
     this.grades.push(newGrade);
 }
-Student.prototype.displayName = function (){
-    return this.firstName+` `+this.lastName;
+Student.prototype.displayName = function () {
+    return this.firstName + ` ` + this.lastName;
 }
 
 Student.prototype.computeAverageGrade = function () {
@@ -55,17 +55,16 @@ let std2 = new Student('Liana', 'Ei', [75, 80, 50]);
 
 std1.insertGrade(70);
 
-console.log( std1.displayName() + ' Average grade is : ' + std1.computeAverageGrade());
-console.log( std2.displayName() + ' Average grade is : ' + std2.computeAverageGrade());
+console.log(std1.displayName() + ' Average grade is : ' + std1.computeAverageGrade());
+console.log(std2.displayName() + ' Average grade is : ' + std2.computeAverageGrade());
 
 /*Question 3 */
 
-Array.prototype.mySort = function() {
+Array.prototype.mySort = function () {
     return this.sort((a, b) => a - b);
 };
 
-console.log('sorted list :: '+std1.grades.mySort());
-
+console.log('sorted list :: ' + std1.grades.mySort());
 
 
 /* Question 4 */
@@ -76,7 +75,7 @@ function Animal(n, s) {
 
 Animal.prototype.run = function (speed) {
     this.speed += speed;
-    console.log(this.name + ' is running at '+ this.speed);
+    console.log(this.name + ' is running at ' + this.speed);
 }
 
 Animal.compareBySpeed = function (a1, a2) {
@@ -85,22 +84,22 @@ Animal.compareBySpeed = function (a1, a2) {
 
     } else if (a1.speed < a2.speed) {
         console.log(`${a2.name} is faster than ${a1.name}.`);
-    } else{
+    } else {
         console.log(`${a1.name} is same speed ${a2.name}.`);
     }
 
 }
 
-function Rabbit(name,speed) {
-    Animal.call(this, name,speed);
+function Rabbit(name, speed) {
+    Animal.call(this, name, speed);
 }
 
 Rabbit.prototype = Object.create(Animal.prototype);
 Rabbit.prototype.constructor = Rabbit;
 
 
-Rabbit.prototype.hide = function (){
-    return console.log(this.name +' hides.');
+Rabbit.prototype.hide = function () {
+    return console.log(this.name + ' hides.');
 }
 
 const animal1 = new Animal("Tiger", 30);

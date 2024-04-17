@@ -41,7 +41,7 @@ function isVowel(ch) {
 }
 
 let x = "BCD";
-console.log( x + " Is Vowel " + isVowel(x));
+console.log(x + " Is Vowel " + isVowel(x));
 
 // 4. Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in the
 // given array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24
@@ -101,17 +101,41 @@ console.log("The length of the longest one is " + findLongestWordLength(strArr))
 // 7. Write a function filterLongWords() that takes an array of words and an integer i and returns a new array
 // containing only those words that were longer than i characters.
 
-function filterLongWords(strArr, num) {
-    let retArr = [];
-    for (let i = 0; i < strArr.length; i++) {
-        if (strArr[i].length > num) {
-            retArr.push(strArr[i]);
-        }
-    }
-    return retArr;
+// function filterLongWords(strArr, num) {
+//     let retArr = [];
+//     for (let i = 0; i < strArr.length; i++) {
+//         if (strArr[i].length > num) {
+//             retArr.push(strArr[i]);
+//         }
+//     }
+//     return retArr;
 
+// }
+
+function filterLongWords(strArr, num) {
+    return strArr.filter(item => item.length > num);
+    
 }
+
 let strArray = ["Fire", "Apple", "Water", "Boo", "Earth"];
 let num = 4;
 
+
+
+
 console.log("Filter Long Words are " + filterLongWords(strArray, num));
+
+function factorial(num, a, b) {
+    let next;
+    for (let i = a; i < num; i++) {
+        a = num - 1;
+        b = num - 2;
+        next = a + b;
+        
+        console.log(next);    
+    }
+    
+
+}
+
+console.log(factorial(7, 0, 1));
