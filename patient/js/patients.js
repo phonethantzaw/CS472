@@ -15,7 +15,37 @@ const showOutPatientsCheckbox = document.getElementById('chkShowOutPatients');
 const submitForm = document.getElementById('submitForm');
 
 //patient Data Array
-let patients = [];
+// let patients = [];
+
+const patients = [
+    {
+        patientIdNumber: 'EP-001-000001',
+        firstName: 'Ana',
+        middleInitials: 'J',
+        lastName: 'Smith',
+        dateOfBirth: '1945-01-05',
+        department: 'Ear, Nose and Throat',
+        isOutPatient: 'No'
+    },
+    {
+        patientIdNumber: 'P-001-000002',
+        firstName: 'Bob',
+        middleInitials: 'K',
+        lastName: 'Jones',
+        dateOfBirth: '1985-05-04',
+        department: 'Cardiology',
+        isOutPatient: 'Yes'
+    },
+    {
+        patientIdNumber: 'EP-001-000003',
+        firstName: 'Carlos',
+        middleInitials: 'A',
+        lastName: 'Hernandez',
+        dateOfBirth: '1957-03-13',
+        department: 'Cardiology',
+        isOutPatient: 'Yes'
+    }
+];
 
 // Function to add a new patient to the table
 function addPatientToTable(patient) {
@@ -131,6 +161,9 @@ function filterByOutPatient() {
         }
     }
 }
+
+//Add sample data
+patients.forEach(addPatientToTable);
 
 // Add event listeners
 registerButton.addEventListener('click', handleFormSubmit);
